@@ -2,11 +2,11 @@
 import random
 number = random.randint(-10000, 10000)
 # YOUR CODE HERE
-lastNumber = number % 10
+lastNumber = int(repr(number)[-1])
 position = ""
 if lastNumber > 5:
     position = "and is greater than 5"
-elif lastNumber < 6 and lastNumber!= 0:
+elif lastNumber < 6 and lastNumber != 0:
     position = "and is less than 6 and not 0"
 else:
     position = "and is 0"
